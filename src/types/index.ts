@@ -1,16 +1,13 @@
-import MyApiMap from './ApiMap'
-import Merge from './Merge'
+import { ApiMap as MyApiMap, Merge } from '@justichentai/types-utils'
 
 /**
  * 初始化选项
  */
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface Options {}
 
 /**
  * 默认选项
  */
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface DefaultOptions {}
 
 /**
