@@ -1,0 +1,6 @@
+{
+  "replace": {
+    "main": "dist/utils.js",
+    "types": "dist/utils.d.ts"
+  }
+}
