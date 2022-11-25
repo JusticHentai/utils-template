@@ -1,5 +1,5 @@
 {
-  "name": "@justichentai/utility-library",
+  "name": "@justichentai/utils-template",
   "version": "1.0.0",
   "description": "工具包模板",
   "license": "ISC",
@@ -9,6 +9,8 @@
   "types": "dist/utils.d.ts",
   "scripts": {
     "build": "rollup -c rollup.config.js",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore",
     "prepublish": "pnpm build",
     "test": "jest"
   },
