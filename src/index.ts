@@ -14,6 +14,7 @@ export default class Utils {
   }
 
   init() {
+    console.log('utilsTemplate 初始化1')
     return this
   }
 }
