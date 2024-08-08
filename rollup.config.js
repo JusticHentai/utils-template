@@ -30,7 +30,6 @@ export default [
           ],
         ],
         plugins: ['@babel/plugin-transform-runtime'],
-        exclude: /node_module/,
       }),
       terser(),
     ],
