@@ -1,20 +1,11 @@
-import { DefaultOptions, InnerOptions, Options } from './types'
+import { Options } from './types'
 
-const defaults: DefaultOptions = {}
+const defaults: Partial<Options> = {}
 
-/**
- * 外部使用对象
- */
 export default class Utils {
-  public options: InnerOptions
+  options: Options
 
   constructor(options: Options) {
     this.options = { ...defaults, ...options }
-    this.init()
-  }
-
-  init() {
-    console.log('utilsTemplate 初始化1')
-    return this
   }
 }
