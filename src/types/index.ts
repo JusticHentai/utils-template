@@ -1,3 +1,1 @@
-export interface Options {
-  nihao?: string
-}
+export interface Options {}
