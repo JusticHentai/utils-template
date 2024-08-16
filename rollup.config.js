@@ -15,10 +15,10 @@ export default [
       },
     ],
     plugins: [
+      resolve(),
       commonjs(),
       typescript(),
       getBabelOutputPlugin({
-        exclude: 'node_modules/**',
         presets: [
           [
             '@babel/preset-env',
@@ -31,7 +31,6 @@ export default [
         ],
         plugins: ['@babel/plugin-transform-runtime'],
       }),
-      resolve(),
       terser(),
     ],
   },
