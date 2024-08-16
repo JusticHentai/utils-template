@@ -10,7 +10,7 @@ export default [
     input: './index.ts',
     output: [
       {
-        file: './dist/utils.js',
+        file: './dist/index.js',
         format: 'es',
       },
     ],
@@ -38,7 +38,7 @@ export default [
     input: './index.ts',
     output: [
       {
-        file: './dist/utils.d.ts',
+        file: './dist/index.d.ts',
         format: 'es',
       },
     ],

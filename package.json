@@ -5,8 +5,8 @@
   "license": "ISC",
   "author": "justichentai",
   "type": "module",
-  "main": "dist/utils.js",
-  "types": "dist/utils.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "package.json",
