@@ -1,8 +1,10 @@
+import alias from '@rollup/plugin-alias'
 import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
+import path from 'path'
 import dts from 'rollup-plugin-dts'
 
 export default [
@@ -15,6 +17,14 @@ export default [
       },
     ],
     plugins: [
+      alias({
+        entries: [
+          {
+            find: '@',
+            replacement: path.resolve('src'),
+          },
+        ],
+      }),
       resolve(),
       commonjs(),
       typescript(),
@@ -42,6 +52,16 @@ export default [
         format: 'es',
       },
     ],
-    plugins: [dts()],
+    plugins: [
+      alias({
+        entries: [
+          {
+            find: '@',
+            replacement: path.resolve('src'),
+          },
+        ],
+      }),
+      dts(),
+    ],
   },
 ]
