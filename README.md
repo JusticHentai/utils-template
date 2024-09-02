@@ -1,34 +1,16 @@
-# Utils-template
+# utils
 
-工具包模板
+工具 utils
 
-## 开发
-
-安装依赖
+## 安装
 
 ```bash
-pnpm i
+pnpm i utils
 ```
 
-然后在 `./src` 中开发
+## 使用
 
-## 单测
+```ts
+import utils from '@justichentai/utils'
 
-内置 `jest` 在 `./test` 中写单元测试
-
-运行命令进行测试
-```bash
-pnpm test
-```
-
-## 打包
-
-```bash
-pnpm build
-```
-
-## 发包
-
-```bash
-pnpm publish --access public
 ```
