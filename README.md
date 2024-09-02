@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-pnpm i utils
+pnpm i @justichentai/utils
 ```
 
 ## 使用
