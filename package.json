@@ -13,23 +13,16 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rollup -c rollup.config.js",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "prepublish": "pnpm build"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/plugin-transform-runtime": "^7.24.7",
-    "@babel/preset-env": "^7.25.3",
-    "@babel/runtime": "^7.25.0",
-    "@rollup/plugin-alias": "^5.1.0",
-    "@rollup/plugin-babel": "^6.0.4",
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "core-js": "^3.38.0",
-    "rollup": "^4.20.0",
-    "rollup-plugin-dts": "^6.1.1",
-    "typescript": "^5.5.4"
+    "@swc/core": "^1.10.1",
+    "@swc/helpers": "^0.5.15",
+    "@types/node": "^22.10.2",
+    "esbuild": "^0.24.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   }
 }
